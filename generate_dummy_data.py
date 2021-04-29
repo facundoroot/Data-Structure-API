@@ -31,14 +31,14 @@ now = datetime.now()
 faker = Faker()
 
 # create dummy users
-"""for i in range(200):
+for i in range(200):
     name = faker.name()
     address = faker.address()
     phone = faker.msisdn()
     email = f'{name.replace(" ", "_")}@email.com'
     new_user = User(name=name, address=address, phone=phone, email=email)
     db.session.add(new_user)
-    db.session.commit()"""
+    db.session.commit()
 
 # create dummy blog posts
 for i in range(200):
